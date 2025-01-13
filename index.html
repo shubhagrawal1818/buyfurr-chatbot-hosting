@@ -4,13 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buyfurr Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Buyfurr Chatbot</h1>
-    <p>Our chatbot is here to assist you. Please wait while it loads.</p>
-    
+    <div class="chatbot-container">
+        <header class="chatbot-header">
+            <img src="logo.png" alt="Buyfurr Logo" class="brand-logo">
+            <h1>Welcome to Buyfurr Chatbot</h1>
+        </header>
+        <main class="chatbot-main">
+            <div class="instructions">
+                <p>Our chatbot is here to assist you. Please wait while it loads.</p>
+            </div>
+            <div class="chat-window" id="chat-window">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="loading" id="loading">
+                <p>Loading...</p>
+                <div class="progress-bar"></div>
+            </div>
+        </main>
+        <footer class="chatbot-footer">
+            <button class="start-chat-button" id="start-chat-button">Start Chat</button>
+        </footer>
+    </div>
+
     <!-- Chatbot Embedding Script -->
     <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2025/01/13/05/20250113050130-K28MWBVP.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
